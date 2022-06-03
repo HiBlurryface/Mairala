@@ -187,7 +187,7 @@ img {
 }
 
 .intro {
-  background: url("../img/bg.png") center no-repeat;
+  background: url("../../img/bg.png") center no-repeat;
   background-size: cover;
   position: relative;
   top: 0;
@@ -200,6 +200,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1440px) {
+  .intro {
+    height: 100vh;
+  }
 }
 
 .intro__suptitle {
@@ -471,7 +477,7 @@ img {
 }
 
 .skills {
-  background: url("../img/skills-bg.jpg") no-repeat;
+  background: url("../../img/skills-bg.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -796,6 +802,7 @@ img {
 }
 
 .team__block {
+  width: 100%;
   max-width: 370px;
 }
 
@@ -823,6 +830,10 @@ img {
 
 .team__block-img {
   position: relative;
+}
+
+.team__block-img_photo {
+  width: 100%;
 }
 
 .team__block-img .team__block-descr {

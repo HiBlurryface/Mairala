@@ -159,6 +159,9 @@ img {
     width: 100%;
     display: flex;
     align-items: center;
+    @media (max-width: 1440px) {
+        height: 100vh;
+    }
     &__suptitle {
         font-family: $Raleway;
         font-size: 24px;
@@ -573,6 +576,7 @@ img {
         }
     }
     &__block {
+        width: 100%;
         max-width: 370px;
         @media (min-width: 769px) {
             &:not(:last-child) {
@@ -594,6 +598,9 @@ img {
         }
         &-img {
             position: relative;
+            &_photo {
+                width: 100%;
+            }
             & .team__block-descr {
                 displaY: flex;
                 justify-content: center;
